@@ -1,0 +1,13 @@
+{
+  "name": "burger-app-v2-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install:all": "cd order-service && npm install && cd ../payment-service && npm install && cd ../notification-service && npm install",
+    "test:all": "cd order-service && npm test && cd ../payment-service && npm test && cd ../notification-service && npm test",
+    "test:bdd:all": "cd order-service && npm run test:bdd && cd ../payment-service && npm run test:bdd && cd ../notification-service && npm run test:bdd"
+  },
+  "dependencies": {
+    "all": "^0.0.0"
+  }
+}
